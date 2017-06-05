@@ -1,0 +1,45 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tic Tac Toe game</title>  
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+<body>
+    <div id="divBody" style="width:700px; height:700px; border:solid 1px white;">
+   <table id="game" class="game">
+        <caption>TicTacToe </caption>
+        <tbody>
+            <tr>
+                <td id="zero" class="gameCell pink"  onclick="move(this)"></td>
+                <td id="one" class="gameCell pink"  onclick="move(this)"></td>
+                <td id="two" class="gameCell pink" onclick="move(this)"></td>
+            </tr>
+            <tr>
+                <td  id="three" class="gameCell pink" onclick="move(this)"></td>
+                <td  id="four" class="gameCell pink" onclick="move(this)"></td>
+                <td  id="five" class="gameCell pink" onclick="move(this)"></td>
+            </tr>
+            <tr>
+                <td id="six" class="gameCell pink" onclick="move(this)"></td>
+                <td id="seven" class="gameCell pink" onclick="move(this)"></td>
+                <td id="eight" class="gameCell pink" onclick="move(this)"></td>
+            </tr>
+        </tbody>
+        <tfoot>     
+               
+                    <tr>
+                        <td colspan="3" class='moved1'> <input type="button" onclick="resetCells(); resetScore();"  class="btn-primary btn btn-lg btn-block" value="Reset" /></td>
+            </tr> 
+            <tr>
+               <td colspan="3" class="moved" id="gameStatus">
+                </td>    
+            </tr>
+        </tfoot> 
+        </table> 
+      <div id="counter">Score: <br><br>
+      <div id="xwon"></div><br>
+      <div id="owon"></div><br>
+      <div id="draw"></div>
+      </div>
+    </div> <!--closing  div id="divBody" -->
+</body>
+</html>
